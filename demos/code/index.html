@@ -15,18 +15,25 @@
   <script src="../../lua_compressed.js"></script>
   <script src="../../dart_compressed.js"></script>
   <script src="code.js"></script>
+  <script src="send_code.js"></script>
 </head>
 <body>
   <table width="100%" height="100%">
     <tr>
       <td>
-        <h1><a href="https://developers.google.com/blockly/">Blockly</a>&rlm; &gt;
-          <a href="../index.html">Demos</a>&rlm; &gt;
-          <span id="title">...</span>
-        </h1>
+        <h1> <span id="title">Code</span> the Bomberman  </h1>
       </td>
       <td class="farSide">
         <select id="languageMenu"></select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div style="margin-left: 20px">
+          <span>Name your bot:</span>
+          <input type="text" id="botName" placeholder="SkyNet">
+          <button style="margin-bottom: 30px;margin-left:20px" id="sendCode">Send the code</button>
+        </div>
       </td>
     </tr>
     <tr>
@@ -57,7 +64,7 @@
               <button id="linkButton" class="notext" title="...">
                 <img src='../../media/1x1.gif' class="link icon21">
               </button>
-              <button id="runButton" class="notext primary" title="...">
+              <button style="display: none" id="runButton" class="notext primary" title="...">
                 <img src='../../media/1x1.gif' class="run icon21">
               </button>
             </td>
